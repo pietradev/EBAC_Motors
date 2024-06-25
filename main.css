@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header, footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container, footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img{
+    max-width: 100%;
+}
+
+.lista-veiculos h3{
+    margin: 16px 0;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lista-veiculos li strong{
+    display: block;
+    margin: 16px 0;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 14px ;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, .form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+footer li{
+    list-style: none;
+    margin-left:  16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+}
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    nav {
+        text-align: center; /* Center align the navigation items */
+    }
+
+    nav li {
+        display: block; /* Stack navigation items vertically */
+        margin-bottom: 8px; /* Add spacing between items */
+    }
+
+    .lista-veiculos {
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .lista-veiculos li {
+        flex: 1 0 100%; /* Full width for list items */
+        max-width: 100%; /* Ensure items do not exceed the screen width */
+        margin-bottom: 16px; /* Add spacing between items */
+    }
+
+    .item-central {
+        margin: 0; /* Remove side margins for centered items */
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%; /* Make images responsive */
+        margin: 0 auto; /* Center align images */
+    }
+
+    .container-flex {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    header > .container, footer > .container {
+        flex-direction: column; /* Stack header/footer items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    form {
+        max-width: 100%; /* Full width for form */
+        padding: 0 10px; /* Add some padding for better appearance */
+    }
+
+    .form-campo {
+        margin-bottom: 12px; /* Adjust spacing between form fields */
+    }
+
+    .menu-hamburguer {
+        display: block; /* Show the hamburger menu */
+    }
+
+    .menu-hamburguer span {
+        background-color: #fff; /* Ensure visibility on dark background */
+    }
+}
